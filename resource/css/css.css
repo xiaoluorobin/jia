@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+*{
+  font-size:14px;/*定义标准字体大小为14个像素*/
+}
+html,body{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:verdana,helvetica,arial,sans-serif;
+  background:#fff;
+  text-align:center;
+}
+h3{
+  font-size:20px;
+  font-weight:bold;
+  margin:12px 0;
+}
+h4{
+  font-size:14px;
+  font-weight:bold;
+  color:#CC0000;
+  margin:5px 0;
+}
+h5{
+  font-size:14px;
+  font-weight:bold;
+  color:#990000;
+  margin:5px 0;
+}
+textarea.html,textarea.js{
+  width:100%;
+  height:80px;
+  overflow:hidden;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+}
+#header{
+  text-align:center;
+  background:#666;
+  direction:ltr;
+  position:relative; z-index:99999；
+
+}
+#header-inner{
+  text-align:left;
+  margin:0 auto;
+  width:960px;
+  padding:10px 0;
+}
+#mainwrap{
+  text-align:center;
+  margin-top:5px;
+}
+#content{
+  text-align:left;
+  width:960px;
+
+  margin:0 auto;
+  padding:10px;
+  padding:0;
+  border-radius:5px;
+  border:0;
+  background:#fff;
+}
+#content img{
+  margin:0;
+}
+#footer{
+  text-align:center;
+  padding:20px;
+}
+#topmenu{
+  text-align:right;
+}
+#topmenu a{
+  display:inline-block;
+  padding:1px 3px;
+  text-decoration:none;
+  color:#fff;
+}
+#topmenu a:hover{
+  text-decoration:underline;
+}
+
+a.download-link{
+  color:#0000ff;
+}
+
+.e-btn{
+  display:inline-block;
+  background:#6caef5;
+  padding:8px 15px;
+  text-decoration:none;
+  border-radius:2px;
+  color:#fff;
+  transition-property:background-color;
+  transition-duration:0.2s;
+  transition-timing-function:ease;
+}
+.e-btn:hover{
+  background: #3e8ddd;
+  color:#fff;
+}
+.e-link{
+  text-decoration: none;
+  color:#126499;
+}
+.e-link:hover{
+  text-decoration: underline;
+  color:#0092C9;
+}
+.e-list li{
+  
+  line-height:22px;
+  list-style:none;
+  margin:0px;
+  width: 200px;
+  
+  
+}
+
+
+
+
+
+input.smallInput{
+  margin: 8px;
+  background:#ffffff;border-bottom-color:#eee;border-bottom-width:1px;border-top-width:0px;border-left-width:0px;
+  border-right-width:0px;solid#ff6633;color:#000000;FONT-SIZE:9pt;FONT-STYLE:normal;FONT-VARIANT:normal;FONT-WEIGHT:normal;
+  width:300px;HEIGHT:18px;LINE-HEIGHT:normal
+}
+
+/*首页主显示区域的样式,设计思想：分类区块+网站list，
+1、div命名为labe
+2、li自动填充与换行，并加上动态效果
+*/
+.labe{ 
+  height: auto; padding-left: 5px; margin-bottom: 5px;  padding-top: 5px; padding-bottom: 5px; 
+  border: 0px solid #EEEEEE; 
+  overflow: hidden;}
+.labe li{ 
+  float: left; list-style-type: none; /*浮动方式改为左侧浮动，去除列表标志*/
+  font-size: 14px; 
+  margin-bottom: 1%; margin-left: 1%;/*边距以比例计算，从而自适应*/
+   margin-right: 1%; margin-top: 1%; 
+  white-space: nowrap;/*自动换行*/
+ }
+.labe a{ 
+  display: block; 
+  padding: 3px; padding-left: 3px; 
+  border: 1px solid #EFEFEF; 
+  color:#666;
+  text-align: center; 
+  text-decoration:none;
+  -webkit-transition: all 0.2s ease-in; 
+  -moz-transition: all 0.2s ease-in; 
+  -ms-transition: all 0.2s ease-in; 
+  -o-transition: all 0.5s ease-in; 
+  transition: all 0.5s ease-in;}
+
+.labe a:hover{ 
+  color: #FFFFFF; background-color: #75449a;
+  border: 1px solid #75449a; }
